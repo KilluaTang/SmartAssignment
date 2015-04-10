@@ -1,7 +1,6 @@
 # SmartAssignment 
 
-Shop Prices
-Your assignment is to create an online supermarket that sells Apples, Bananas and Coconuts. The following rules apply:
+Create an online supermarket that sells Apples, Bananas and Coconuts. The following rules apply:
 ·        Apples are R2 each, but you get 3 apples for R5
 ·        Bananas are R3 each, but you can only buy a maximum of 10
 ·        Coconuts are R4 each, but if you buy 2 you get 1 free.
