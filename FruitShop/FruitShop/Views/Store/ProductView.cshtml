@@ -1,0 +1,31 @@
+﻿@model FruitShop.ViewModels.StoreViewModel
+
+@{
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+  <div class="menu row">
+    <div class="product col-sm-6">
+      <br />
+      <img class="img-responsive" src="@Url.Content("~/Content/ProductImage/" + @Model.Product.ImageName)"><i class="btn btn-product fa fa-star"></i>
+      <hr />
+      <h2>@Model.Product.ProductName</h2>
+      <p>
+        @Model.Product.Description
+      </p>
+      <br />
+      <h4>Product Deal</h4>
+      <hr />
+      <p>@Model.Product.Deal</p>
+      <hr />
+      <h2 class="text-right">R @Model.Product.Price</h2>
+      @Html.ActionLink("Back to Store",
+                             "Index",
+                             "Store",
+                             new { @class = "btn btn-primary btn-lg" })
+
+      @Html.ActionLink("Add to Cart", "Add", "Cart", new { id = @Model.Product.ProductId }, new { @class = "btn btn-primary btn-lg" })
+    </div>
+  </div>
+</div>
