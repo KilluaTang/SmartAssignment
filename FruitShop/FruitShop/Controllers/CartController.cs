@@ -14,8 +14,12 @@ namespace FruitShop.Controllers
   {
     public ActionResult Index()
     {
-      var productsInCart = CartData.GetItems();
-      return View(productsInCart);
+      var productsInCart = CartData.GetItemsInCart();
+
+      CartViewModel model = new CartViewModel();
+      model.ProductsInCart = productsInCart;
+
+      return View(model);
     }
 
     public ActionResult Add(int id)

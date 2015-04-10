@@ -24,9 +24,16 @@ namespace FruitShop.DataAccess
       }
     }
 
-    public static List<CartItem> GetItems()
+    public static List<Product> GetItemsInCart()
     {
-      return Instance.ItemsInCart;
+      List<Product> productItemsInCart = new List<Product>();
+      
+      foreach(var product in Instance.ItemsInCart)
+      {
+        productItemsInCart.Add(ProductData.GetProduct(product.ProductId));
+      }
+
+      return productItemsInCart;
     }
 
     //  AddItem() - Adds an item to the Cart
@@ -34,7 +41,7 @@ namespace FruitShop.DataAccess
     {
       CartItem newItem = new CartItem(productId);
 
-      if (Instance.ItemsInCart.Contains(newItem))
+      if (Instance.ItemsInCart.Exists(cartItem => cartItem.ProductId == productId))
       {
         foreach (CartItem item in Instance.ItemsInCart)
         {

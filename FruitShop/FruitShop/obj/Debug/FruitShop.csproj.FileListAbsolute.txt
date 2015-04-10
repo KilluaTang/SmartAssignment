@@ -76,3 +76,29 @@ D:\Dev\SmartAssessment\FruitShop\FruitShop\bin\System.Web.WebPages.Razor.xml
 D:\Dev\SmartAssessment\FruitShop\FruitShop\bin\Antlr3.Runtime.pdb
 D:\Dev\SmartAssessment\FruitShop\FruitShop\bin\Newtonsoft.Json.xml
 D:\Dev\SmartAssessment\FruitShop\FruitShop\obj\Debug\FruitShop.pdb
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\FruitShop.dll.config
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\FruitShop.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\FruitShop.pdb
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\Antlr3.Runtime.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\Microsoft.Web.Infrastructure.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\Newtonsoft.Json.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.Helpers.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.Mvc.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.Optimization.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.Razor.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.WebPages.Deployment.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.WebPages.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.WebPages.Razor.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\WebGrease.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.Helpers.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.Mvc.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.Optimization.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.Razor.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.WebPages.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.WebPages.Deployment.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\System.Web.WebPages.Razor.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\Antlr3.Runtime.pdb
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\Newtonsoft.Json.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\obj\Debug\FruitShop.csprojResolveAssemblyReference.cache
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\obj\Debug\FruitShop.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\obj\Debug\FruitShop.pdb
