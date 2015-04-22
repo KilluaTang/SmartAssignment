@@ -12,7 +12,6 @@ namespace FruitShop.Models
         public int ProductId { get; set; }
         public int Quantity { get; set; }
         public int Count { get; set; }
-        public decimal Total { get; set; }
 
         public CartItem(int productId)
         {

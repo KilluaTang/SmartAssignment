@@ -102,3 +102,7 @@ C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\Newtonsoft.Json.xml
 C:\Git Repo\SmartAssignment\FruitShop\FruitShop\obj\Debug\FruitShop.csprojResolveAssemblyReference.cache
 C:\Git Repo\SmartAssignment\FruitShop\FruitShop\obj\Debug\FruitShop.dll
 C:\Git Repo\SmartAssignment\FruitShop\FruitShop\obj\Debug\FruitShop.pdb
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\EntityFramework.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\EntityFramework.SqlServer.dll
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\EntityFramework.xml
+C:\Git Repo\SmartAssignment\FruitShop\FruitShop\bin\EntityFramework.SqlServer.xml

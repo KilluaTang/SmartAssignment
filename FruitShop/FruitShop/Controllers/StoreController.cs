@@ -15,16 +15,20 @@ namespace FruitShop.Controllers
     // GET: Products
     public ActionResult Index()
     {
+      ProductData products = new ProductData();
+
       StoreViewModel model = new StoreViewModel();
-      model.Products = ProductData.GetProducts();
+      model.Products = products.GetProducts();
 
       return View(model);
     }
 
     public ActionResult ProductView(int id)
     {
+      ProductData products = new ProductData();
+
       StoreViewModel model = new StoreViewModel();
-      model.Product = ProductData.GetProduct(id);
+      model.Product = products.GetProduct(id);
 
       return View(model);
     }

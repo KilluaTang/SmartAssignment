@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 
 using FruitShop.Models;
+using FruitShop.DataAccess;
 
 namespace FruitShop.ViewModels
 {

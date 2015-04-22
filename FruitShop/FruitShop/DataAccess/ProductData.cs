@@ -7,59 +7,21 @@ using FruitShop.Models;
 
 namespace FruitShop.DataAccess
 {
-    public static class ProductData
+    public class ProductData
     {
-        static List<Product> products = new List<Product>();
-        static string defaultProductImagePath = "~/Content/ProductImage/";
+        private ProductContext db = new ProductContext();
 
-        static ProductData()
+        public List<Product> GetProducts()
         {
-            products.Add(new Product
-            {
-                ProductId = 1,
-                Price = 2.0m,
-                ProductName = "Apple",
-                ImageName = "Apple.jpg",
-                ImagePath = defaultProductImagePath,
-                Description = "Yummy Apple! Nice and Sweet!",
-                Deal = "Apples are R2 each, but you get 3 apples for R5!",
-                QuantityLimit = -1
-            });
-
-            products.Add(new Product
-            {
-                ProductId = 2,
-                Price = 3.0m,
-                ProductName = "Banana",
-                ImageName = "Banana.jpg",
-                Description = "Banana?! Baaaaaa naaaaaa naaaaaaa!",
-                Deal = "Banana are R3 each, but you can only buy a maximum of 10",
-                QuantityLimit = 10
-            });
-
-            products.Add(new Product
-            {
-                ProductId = 3,
-                Price = 4.0m,
-                ProductName = "Coconut",
-                ImageName = "Coconut.jpg",
-                Description = "Ee Man we sell it cheap cheap!",
-                Deal = "Coconuts are R4 each, but if you buy 2 you get 1 free.",
-                QuantityLimit = -1
-            });
+            return db.Products.ToList();
         }
 
-        public static List<Product> GetProducts()
+        public Product GetProduct( int productId )
         {
-            return products;
+            return db.Products.Find(productId);
         }
 
-        public static Product GetProduct( int productId )
-        {
-            return products.Single(product => product.ProductId == productId);
-        }
-
-        public static decimal GetProductDealPrice( int productId, int quantity )
+        public decimal GetProductDealPrice( int productId, int quantity )
         {
             decimal sumDealPrice = 0.0m;
             decimal productPrice = GetProduct(productId).Price;
