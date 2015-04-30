@@ -7,51 +7,66 @@ using System.Web;
 
 namespace FruitShop.DataAccess
 {
-    public class ProductInitializer : DropCreateDatabaseIfModelChanges<ProductContext>
+    public class ShopInitializer : DropCreateDatabaseIfModelChanges<ShopContext>
     {
-        protected override void Seed(ProductContext context)
+        protected override void Seed(ShopContext context)
         {
             var products = new List<Product>
             {
                 new Product
                 {
-                    ProductId = 1,
                     Price = 2.0m,
                     ProductName = "Apple",
                     ImageName = "Apple.jpg",
                     Description = "Yummy Apple! Nice and Sweet!",
-                    //DealId = "Apples are R2 each, but you get 3 apples for R5!",
-                    QuantityLimit = -1
+                    DealId = 1
                 },
                 
                 new Product
                 {
-                    ProductId = 2,
                     Price = 3.0m,
                     ProductName = "Banana",
                     ImageName = "Banana.jpg",
                     Description = "Banana?! Baaaaaa naaaaaa naaaaaaa!",
-                    //DealId = "Banana are R3 each, but you can only buy a maximum of 10",
+                    DealId = 2,
                     QuantityLimit = 10
                 },
                 
                 new Product
                 {
-                    ProductId = 3,
                     Price = 4.0m,
                     ProductName = "Coconut",
                     ImageName = "Coconut.jpg",
                     Description = "Ee Man we sell it cheap cheap!",
-                    //DealId = "Coconuts are R4 each, but if you buy 2 you get 1 free.",
-                    QuantityLimit = -1
+                    DealId = 3
                 }
             };
 
-            foreach (var product in products)
-            {
-                context.Products.Add(product);
-            }
+            products.ForEach(s => context.Products.Add(s));
+            context.SaveChanges();
 
+            var deals = new List<Deal>
+            {
+                new Deal
+                {
+                    DealName = "Buy 3 in discount price",
+                    DealDescription = "Buy 3 for R5"
+                },
+
+                new Deal
+                {
+                    DealName = "Pachurse Quantity Limit",
+                    DealDescription = "Can only buy maximum of 10"
+                },
+
+                new Deal
+                {
+                    DealName = "Buy 2 get 1 free",
+                    DealDescription = "Buy 2 get 1 free"
+                }
+            };
+
+            deals.ForEach(s => context.Deals.Add(s));
             context.SaveChanges();
         }
     }

@@ -12,5 +12,8 @@ namespace FruitShop.ViewModels
     {
         public IEnumerable<Product> Products { get; set; }
         public Product Product { get; set; }
+        public Deal Deal { get; set; }
+
+        public string ImagePath { get; set; }
     }
 }

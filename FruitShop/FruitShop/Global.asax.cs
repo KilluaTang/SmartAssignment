@@ -14,7 +14,6 @@ namespace FruitShop
     {
         protected void Application_Start()
         {
-            Database.SetInitializer<ProductContext>(new ProductInitializer());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -7,15 +7,12 @@ using FruitShop.DataAccess;
 
 namespace FruitShop.Models
 {
-    public class CartItem
+    public class Cart
     {
+        public int CartId { get; set; }
         public int ProductId { get; set; }
         public int Quantity { get; set; }
-        public int Count { get; set; }
 
-        public CartItem(int productId)
-        {
-            this.ProductId = productId;
-        }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

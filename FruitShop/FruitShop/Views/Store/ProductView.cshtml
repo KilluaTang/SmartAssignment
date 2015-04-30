@@ -8,7 +8,7 @@
   <div class="menu row">
     <div class="product col-sm-6">
       <br />
-      <img class="img-responsive" src="@Url.Content("~/Content/ProductImage/" + @Model.Product.ImageName)"><i class="btn btn-product fa fa-star"></i>
+      <img class="img-responsive" src="@Url.Content(@Model.ImagePath + @Model.Product.ImageName)"><i class="btn btn-product fa fa-star"></i>
       <hr />
       <h2>@Model.Product.ProductName</h2>
       <p>
@@ -17,7 +17,7 @@
       <br />
       <h4>Product Deal</h4>
       <hr />
-      <p>@Model.Product.Deal</p>
+      <p>Deal here</p>
       <hr />
       <h2 class="text-right">R @Model.Product.Price</h2>
       @Html.ActionLink("Back to Store",

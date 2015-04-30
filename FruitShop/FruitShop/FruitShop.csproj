@@ -122,14 +122,15 @@
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="DataAccess\CartData.cs" />
-    <Compile Include="DataAccess\ProductContext.cs" />
+    <Compile Include="DataAccess\DealData.cs" />
+    <Compile Include="DataAccess\ShopContext.cs" />
     <Compile Include="DataAccess\ProductData.cs" />
-    <Compile Include="DataAccess\ProductInitializer.cs" />
+    <Compile Include="DataAccess\ShopInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CartItem.cs" />
-    <Compile Include="Models\DealRule.cs" />
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\Deal.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\CartViewModel.cs" />
